@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation 3D - Les Drogues et leurs Effets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <p>Chargement de la présentation...</p>
+    </div>
+
+    <canvas id="canvas3d"></canvas>
+
+    <header>
+        <h1>Les Drogues et leurs Effets</h1>
+        <p class="subtitle">Une présentation interactive et éducative</p>
+    </header>
+
+    <nav id="navigation">
+        <button class="nav-btn active" data-section="0">Introduction</button>
+        <button class="nav-btn" data-section="1">Types de Drogues</button>
+        <button class="nav-btn" data-section="2">Effets sur le Cerveau</button>
+        <button class="nav-btn" data-section="3">Conséquences</button>
+        <button class="nav-btn" data-section="4">Prévention</button>
+    </nav>
+
+    <div id="content-panel" class="content-panel">
+        <div class="section active" data-section="0">
+            <h2>Introduction</h2>
+            <p>Les drogues sont des substances psychoactives qui modifient le fonctionnement du cerveau et peuvent avoir des effets graves sur la santé physique et mentale.</p>
+            <ul>
+                <li><strong>Impact mondial :</strong> Des millions de personnes affectées</li>
+                <li><strong>Santé publique :</strong> Un enjeu majeur</li>
+                <li><strong>Prévention :</strong> L'information est essentielle</li>
+            </ul>
+            <div class="info-box">
+                <p>💡 Cette présentation vise à informer et sensibiliser sur les dangers des drogues.</p>
+            </div>
+        </div>
+
+        <div class="section" data-section="1">
+            <h2>Types de Drogues</h2>
+            <div class="drug-categories">
+                <div class="category">
+                    <h3>🔴 Dépresseurs</h3>
+                    <p><strong>Exemples :</strong> Alcool, opiacés, benzodiazépines</p>
+                    <p><strong>Effets :</strong> Ralentissement du système nerveux, somnolence, diminution de la vigilance</p>
+                </div>
+                <div class="category">
+                    <h3>🟡 Stimulants</h3>
+                    <p><strong>Exemples :</strong> Cocaïne, amphétamines, caféine</p>
+                    <p><strong>Effets :</strong> Augmentation de l'activité cérébrale, euphorie, insomnie</p>
+                </div>
+                <div class="category">
+                    <h3>🟣 Hallucinogènes</h3>
+                    <p><strong>Exemples :</strong> LSD, champignons, cannabis</p>
+                    <p><strong>Effets :</strong> Altération de la perception, hallucinations, confusion</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" data-section="2">
+            <h2>Effets sur le Cerveau</h2>
+            <p>Les drogues perturbent la communication entre les neurones en interférant avec les neurotransmetteurs.</p>
+            <div class="brain-effects">
+                <div class="effect-item">
+                    <h3>🧠 Système de récompense</h3>
+                    <p>Libération excessive de dopamine créant une sensation de plaisir artificiel</p>
+                </div>
+                <div class="effect-item">
+                    <h3>⚡ Neurotransmetteurs</h3>
+                    <p>Perturbation de la sérotonine, dopamine, et GABA</p>
+                </div>
+                <div class="effect-item">
+                    <h3>🔄 Dépendance</h3>
+                    <p>Le cerveau s'adapte et nécessite la drogue pour fonctionner normalement</p>
+                </div>
+                <div class="effect-item">
+                    <h3>📉 Dommages à long terme</h3>
+                    <p>Altération de la mémoire, de la cognition et des émotions</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" data-section="3">
+            <h2>Conséquences</h2>
+            <div class="consequences">
+                <div class="consequence-box health">
+                    <h3>🏥 Santé Physique</h3>
+                    <ul>
+                        <li>Maladies cardiovasculaires</li>
+                        <li>Problèmes respiratoires</li>
+                        <li>Dommages au foie et aux reins</li>
+                        <li>Affaiblissement du système immunitaire</li>
+                        <li>Risque d'overdose mortelle</li>
+                    </ul>
+                </div>
+                <div class="consequence-box mental">
+                    <h3>🧠 Santé Mentale</h3>
+                    <ul>
+                        <li>Dépression et anxiété</li>
+                        <li>Psychose et paranoïa</li>
+                        <li>Troubles de la mémoire</li>
+                        <li>Altération du jugement</li>
+                        <li>Risque de suicide accru</li>
+                    </ul>
+                </div>
+                <div class="consequence-box social">
+                    <h3>👥 Impact Social</h3>
+                    <ul>
+                        <li>Problèmes familiaux</li>
+                        <li>Perte d'emploi</li>
+                        <li>Isolement social</li>
+                        <li>Difficultés financières</li>
+                        <li>Problèmes judiciaires</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="stats">
+                <h3>📊 Statistiques Alarmantes</h3>
+                <p><strong>275 millions</strong> de personnes ont consommé des drogues dans le monde (2020)</p>
+                <p><strong>36 millions</strong> souffrent de troubles liés à la consommation</p>
+                <p><strong>500 000</strong> décès par an liés aux drogues</p>
+            </div>
+        </div>
+
+        <div class="section" data-section="4">
+            <h2>Prévention et Aide</h2>
+            <div class="prevention">
+                <div class="prevention-item">
+                    <h3>🛡️ Prévention</h3>
+                    <ul>
+                        <li>Information et éducation dès le jeune âge</li>
+                        <li>Développement des compétences psychosociales</li>
+                        <li>Environnement familial soutenant</li>
+                        <li>Activités alternatives saines</li>
+                        <li>Gestion du stress et des émotions</li>
+                    </ul>
+                </div>
+                <div class="prevention-item">
+                    <h3>🆘 Obtenir de l'Aide</h3>
+                    <ul>
+                        <li><strong>Drogues Info Service :</strong> 0 800 23 13 13</li>
+                        <li><strong>Écoute Cannabis :</strong> 0 980 980 930</li>
+                        <li><strong>Alcool Info Service :</strong> 0 980 980 930</li>
+                        <li>Consultations dans les CSAPA</li>
+                        <li>Groupes de soutien et thérapies</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="info-box success">
+                <h3>✅ Le Rétablissement est Possible</h3>
+                <p>Avec un soutien approprié, un traitement adapté et de la détermination, il est possible de surmonter la dépendance et de retrouver une vie saine et épanouie.</p>
+            </div>
+            <div class="final-message">
+                <h3>💪 Message Final</h3>
+                <p>La meilleure façon de lutter contre les drogues est la prévention. Informez-vous, parlez-en, et n'hésitez pas à demander de l'aide si nécessaire.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="controls">
+        <p>Utilisez les boutons de navigation ou les flèches ← → du clavier</p>
+        <p>Cliquez et glissez pour faire pivoter la scène 3D</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
